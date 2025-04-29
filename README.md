@@ -105,3 +105,21 @@ The backend for the Airbnb Clone project is designed to provide a robust and sca
 **Why Security Matters**:
 + Identifies suspicious behavior (e.g., repeated failed logins, unusual traffic spikes).
 + Enables rapid incident response and forensic analysis after breaches.
+
+## CI/CD Pipeline
+
+**CI/CD Pipelines** (Continuous Integration/Continuous Deployment) are automated workflows that streamline the process of integrating code changes, testing them, and deploying applications to production.
+
+**Why They’re Important**:
++ Faster Releases: Automate repetitive tasks (testing, building, deploying) to ship updates quickly.
++ Early Bug Detection: Run automated tests continuously to catch issues before they reach production.
++ Consistency: Reduce human error with standardized, repeatable processes.
++ Collaboration: Enable developers to merge code frequently, avoiding integration conflicts.
++ Reliable Rollbacks: If a deployment fails, revert to a stable version instantly.
+
+**Common Tools**:
++ CI: Jenkins, GitLab CI/CD, GitHub Actions, CircleCI.
++ CD: Argo CD, Spinnaker, AWS CodeDeploy.
++ Containerization: Docker, Kubernetes (for managing deployments).
++ Testing: Selenium, pytest, JUnit.
++ Infrastructure as Code (IaC): Terraform, Ansible
