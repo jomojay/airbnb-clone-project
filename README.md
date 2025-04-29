@@ -2,6 +2,7 @@
 
 The backend for the Airbnb Clone project is designed to provide a robust and scalable foundation for managing user interactions, property listings, bookings, and payments. This backend will support various functionalities required to mimic the core features of Airbnb, ensuring a smooth experience for users and hosts.
 
+
 ## 🏆 Project Goals
 
 1. **User Management**: Implement a secure system for user registration, authentication, and profile management.
@@ -10,6 +11,7 @@ The backend for the Airbnb Clone project is designed to provide a robust and sca
 4. **Payment Processing**: Integrate a payment system to handle transactions and record payment details.
 5. **Review System**: Allow users to leave reviews and ratings for properties.
 6. **Data Optimization**: Ensure efficient data retrieval and storage through database optimizations.
+
 
 ## ⚙️  Technology Stack
 
@@ -22,12 +24,14 @@ The backend for the Airbnb Clone project is designed to provide a robust and sca
 7. **Docker**: Containerization tool for consistent development and deployment environments.
 8. **CI/CD Pipelines**: Automated pipelines for testing and deploying code changes.
 
+
 ## 👥 Team Roles
 
 1. **Backend Developer**: Responsible for implementing API endpoints, database schemas, and business logic.
 2. **Database Administrator**: Manages database design, indexing, and optimizations.
 3. **DevOps Engineer**: Handles deployment, monitoring, and scaling of the backend services.
 4. **QA Engineer**: Ensures the backend functionalities are thoroughly tested and meet quality standards.
+
 
 ## Database Design
 
@@ -36,6 +40,7 @@ The backend for the Airbnb Clone project is designed to provide a robust and sca
 3. **Bookings**: A booking belongs to a property
 4. **Reviews**:
 5. **Payments**:
+
 
 ## 🛠️ Feature Breakdown
 
@@ -68,43 +73,51 @@ The backend for the Airbnb Clone project is designed to provide a robust and sca
 + ***Indexing***: Implement indexes for fast retrieval of frequently accessed data.
 + ***Caching***: Use caching strategies to reduce database load and improve performance.
 
+
 ## API Security
 
 ### 1. Authentication
 **Focus**: Verify the identity of users or systems accessing the API.
+
 **Why Security Matters**:
 + Prevents unauthorized access to sensitive data (e.g., user profiles, payment details).
 + Ensures only legitimate users or services interact with the API, reducing fraud risks.
 
 ### 2. Authorization
 **Focus**: Control what authenticated users/systems can do (e.g., read, write, delete).
+
 **Why Security Matters**:
 + Restricts access to critical operations (e.g., financial transactions, admin functions). 
 + Prevents privilege escalation (e.g., regular users accessing admin-only endpoints).
 
 ### 3. Rate Limiting
 **Focus**: Enforce limits on how often users/IPs can call the API.
+
 **Why Security Matters**:
 + Blocks brute-force attacks (e.g., credential stuffing, password guessing).
 + Protects against DDoS attacks and API abuse, ensuring availability for legitimate users.
 
 ### 4. Encryption (HTTPS/TLS)
 **Focus**: Secure data in transit between clients and the API.
+
 **Why Security Matters**:
 + Prevents eavesdropping or tampering with sensitive data (e.g., passwords, payment info).
 + Mandatory for compliance with regulations like GDPR or PCI-DSS.
 
 ### 5. Input Validation
 **Focus**: anitize and validate all incoming data (e.g., query params, request bodies).
+
 **Why Security Matters**:
 + Mitigates injection attacks (e.g., SQLi, XSS) that could compromise databases or users.
 + Ensures malformed requests don’t crash the API or expose vulnerabilities.
 
 ### 6. Logging & Monitoring
 **Focus**: Track API activity and detect anomalies.
+
 **Why Security Matters**:
 + Identifies suspicious behavior (e.g., repeated failed logins, unusual traffic spikes).
 + Enables rapid incident response and forensic analysis after breaches.
+
 
 ## CI/CD Pipeline
 
