@@ -35,12 +35,13 @@ The backend for the Airbnb Clone project is designed to provide a robust and sca
 
 ## Database Design
 
-1. **Users**: A user can have multiple properties
-2. **Properties**:
-3. **Bookings**: A booking belongs to a property
-4. **Reviews**:
-5. **Payments**:
-
+| Entity | Key Fields | Description |
+|:---|:---|:---|
+| User | id, name, email, password, profile_photo | Users of the platform. Can be guests or hosts. |
+| Property | id, title, description, location, price_per_night, owner_id | Properties listed for rental by hosts. |
+| Booking | id, user_id, property_id, check_in, check_out, total_price | Booking information linking users to properties. |
+| Payment | id, booking_id, amount, payment_method, payment_status | Details of transactions related to bookings. |
+| Review | id, user_id, property_id, rating, comment, created_at | Reviews left by users after their stay. |
 
 ## 🛠️ Feature Breakdown
 
